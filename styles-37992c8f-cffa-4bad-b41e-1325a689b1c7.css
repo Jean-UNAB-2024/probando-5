@@ -1,0 +1,56 @@
+:root {
+  --bg-primary: rgb(206 89 55 / 59%);
+  --color-primary: rgb(206 89 55 / 100%);
+}
+html {
+  background-color: #fcd1c6;
+}
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: linear-gradient(to right top, #ffac98, #ffb5a3, #febfaf, #fdc8ba, #fcd1c6);
+  min-height: 100vh;
+}
+
+.title {
+
+  color: white;
+  font-weight: bolder;
+  /* text-shadow: 0px 6px 2px rgb(206 89 55 / 59%); */
+  text-shadow: 0px 4px 2px rgb(206 89 55 / 59%);
+  text-transform: uppercase;
+}
+
+.--bg-primary {
+  background-color: var(--bg-primary);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--bg-primary);
+}
+.nav-link {
+  color: var(--color-primary);
+}
+
+.fade-in {
+  animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h3{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 75px;
+  align-items: center;
+  color: white;
+  border-color: rgb(243, 96, 96);
+}
